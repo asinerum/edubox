@@ -671,7 +671,7 @@ Char2     DB ?                      ;Before-last..
 Char3     DB ?                      ;Before-Before-last..
 Char4     DB ?                      ;Before-Before-Before-last..
 Numskip   DB ?                      ;For getting VN sign [F/S/R/X/J]
-Check_    DB '8542'                ;Parameter for checking residentness
+Check_    DB '8542'                 ;Parameter for checking residentness
 Spare     DB 0                      ;For ending of parameter [Check_]
 Char_set  DB 'AEIOUYaeiouy'
           DB Be_aw,Be_aa,Be_ee,Be_oo,Be_ow,Be_uw
@@ -893,3 +893,4 @@ Install:
       int    27h
 codes ENDS
       END start
+
